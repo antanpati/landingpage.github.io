@@ -47,6 +47,7 @@ body::before {
   display: inline-block;
   color: white;
   background-color: #f86b92;
+  border: 1px solid transparent;
   border-radius: 2em;
   padding: 0.5em 2em;
 }
@@ -90,14 +91,16 @@ body::before {
   display: inline-block;
   color: white;
   background-color: #f86b92;
+  border: 1px solid transparent;
   border-radius: 2em;
   padding: 0.5em 2em;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .custom-section a:hover {
   color: #f86b92;
   border: 1px solid #f86b92;
   background-color: transparent;
-  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

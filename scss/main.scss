@@ -12,6 +12,7 @@ $textColor: #46474c;
   display: inline-block;
   color: white;
   background-color: $primaryColor;
+  border: 1px solid transparent;
   border-radius: 2em;
   padding: 0.5em 2em;
 }
@@ -106,12 +107,12 @@ body {
   a {
     margin-top: 2.3em;
     @include tombol;
+    transition: 0.5s ease;
 
     &:hover {
       color: $primaryColor;
       border: 1px solid $primaryColor;
       background-color: transparent;
-      text-decoration: none;
     }
   }
 }
