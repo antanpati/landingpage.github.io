@@ -3,13 +3,13 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-body:before {
+body::before {
   content: "";
   background-image: url(../img/Asset-1@2x.png);
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 55vmax;
-  opacity: 0.8;
+  opacity: 0.5;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -79,25 +79,25 @@ body:before {
 }
 
 .custom-section p {
-  color: #bed0f8;
+  color: #46474c;
   font-weight: 700;
   font-size: 0.9rem;
   margin-top: 2em;
 }
 
 .custom-section a {
-  margin-top: 2em;
+  margin-top: 2.3em;
   display: inline-block;
   color: white;
   background-color: #f86b92;
   border-radius: 2em;
   padding: 0.5em 2em;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
 }
 
 .custom-section a:hover {
   color: #f86b92;
   border: 1px solid #f86b92;
+  background-color: transparent;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

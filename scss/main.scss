@@ -78,6 +78,7 @@ body {
 // custom section
 .custom-section {
   margin-top: 10em;
+
   h2 {
     font-weight: 700;
     font-size: 4rem;
@@ -94,21 +95,23 @@ body {
     white-space: nowrap;
     line-height: 1;
   }
+
   p {
-    color: $secondaryColor;
+    color: $textColor;
     font-weight: 700;
     font-size: 0.9rem;
     margin-top: 2em;
   }
+
   a {
-    margin-top: 2em;
+    margin-top: 2.3em;
     @include tombol;
-    transition: 0.3s ease;
 
     &:hover {
       color: $primaryColor;
       border: 1px solid $primaryColor;
       background-color: transparent;
+      text-decoration: none;
     }
   }
 }
