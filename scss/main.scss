@@ -1,0 +1,114 @@
+// font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Viga&display=swap");
+
+// variable
+$primaryColor: #f86b92;
+$secondaryColor: #bed0f8;
+$tertiaryColor: #d4befc;
+$textColor: #46474c;
+
+// Mixin
+@mixin tombol {
+  display: inline-block;
+  color: white;
+  background-color: $primaryColor;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+}
+
+// style
+body {
+  font-family: "Montserrat", sans-serif;
+  &::before {
+    content: "";
+    background-image: url(../img/Asset-1@2x.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 55vmax;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+// Navigasi
+.costum-nav {
+  .navbar-brand {
+    img {
+      width: 50px;
+      height: 50px;
+      margin-top: -5px;
+    }
+    span {
+      color: $primaryColor;
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin-left: 0.4em;
+    }
+  }
+
+  #navbarNav {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $primaryColor;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-left: 2.2em;
+          transition: 0.3s color ease;
+
+          &:hover {
+            color: darken($primaryColor, 15%);
+          }
+        }
+        .sign-up-button {
+          @include tombol;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    margin-top: -3em;
+  }
+}
+
+// custom section
+.custom-section {
+  margin-top: 10em;
+  h2 {
+    font-weight: 700;
+    font-size: 4rem;
+    color: $primaryColor;
+    white-space: nowrap;
+    line-height: 1;
+  }
+
+  h3 {
+    font-weight: 400;
+    color: $secondaryColor;
+    font-size: 2rem;
+    color: $secondaryColor;
+    white-space: nowrap;
+    line-height: 1;
+  }
+  p {
+    color: $secondaryColor;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-top: 2em;
+  }
+  a {
+    margin-top: 2em;
+    @include tombol;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: $primaryColor;
+      border: 1px solid $primaryColor;
+      background-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Viga&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body:before {
+  content: "";
+  background-image: url(../img/Asset-1@2x.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 55vmax;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.costum-nav .navbar-brand img {
+  width: 50px;
+  height: 50px;
+  margin-top: -5px;
+}
+
+.costum-nav .navbar-brand span {
+  color: #f86b92;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-left: 0.4em;
+}
+
+.costum-nav #navbarNav .navbar-nav .nav-item .nav-link {
+  color: #f86b92;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 2.2em;
+  -webkit-transition: 0.3s color ease;
+  transition: 0.3s color ease;
+}
+
+.costum-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: #f5225c;
+}
+
+.costum-nav #navbarNav .navbar-nav .nav-item .sign-up-button {
+  display: inline-block;
+  color: white;
+  background-color: #f86b92;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+}
+
+@media screen and (max-width: 992px) {
+  .costum-nav {
+    margin-top: -3em;
+  }
+}
+
+.custom-section {
+  margin-top: 10em;
+}
+
+.custom-section h2 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #f86b92;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.custom-section h3 {
+  font-weight: 400;
+  color: #bed0f8;
+  font-size: 2rem;
+  color: #bed0f8;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.custom-section p {
+  color: #bed0f8;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-top: 2em;
+}
+
+.custom-section a {
+  margin-top: 2em;
+  display: inline-block;
+  color: white;
+  background-color: #f86b92;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.custom-section a:hover {
+  color: #f86b92;
+  border: 1px solid #f86b92;
+}
+/*# sourceMappingURL=main.css.map */
