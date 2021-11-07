@@ -8,13 +8,20 @@ body::before {
   background-image: url(../img/Asset-1@2x.png);
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: 55vmax;
-  opacity: 0.5;
+  background-size: 70vmax;
+  opacity: 0.9;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 992px) {
+  body::before {
+    opacity: 0.4;
+  }
 }
 
 .costum-nav .navbar-brand img {
@@ -59,7 +66,7 @@ body::before {
 }
 
 .custom-section {
-  margin-top: 10em;
+  margin-top: -1em;
 }
 
 .custom-section h2 {
@@ -71,10 +78,9 @@ body::before {
 }
 
 .custom-section h3 {
-  font-weight: 400;
-  color: #bed0f8;
+  font-weight: 700;
   font-size: 2rem;
-  color: #bed0f8;
+  color: #2256c7;
   white-space: nowrap;
   line-height: 1;
 }
@@ -94,6 +100,7 @@ body::before {
   border: 1px solid transparent;
   border-radius: 2em;
   padding: 0.5em 2em;
+  border: 1px solid transparent;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -102,5 +109,16 @@ body::before {
   color: #f86b92;
   border: 1px solid #f86b92;
   background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-section::after {
+    text-align: center;
+  }
+  .custom-section::after h2,
+  .custom-section::after h3,
+  .custom-section::after p {
+    text-shadow: 1px 1px 1px rgba(70, 71, 76, 0.4);
+  }
 }
 /*# sourceMappingURL=main.css.map */
